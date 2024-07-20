@@ -58,7 +58,7 @@ while (devamEt)
         }
     }
 
-    toplam += lokasyonFiyatı;
+  
 
     // Kullanıcıdan kaç kişi için tatil planlandığı bilgisi alınır.
     Console.WriteLine("Kaç kişi için tatil planlamak istiyorsunuz?");
@@ -98,7 +98,7 @@ while (devamEt)
     }
 
     // Toplam tutar hesaplanır.
-    toplam += ulaşımFiyatı * kişiSayısı;
+    toplam += ulaşımFiyatı * kişiSayısı+lokasyonFiyatı*kişiSayısı;
 
     // Sonuçlar kullanıcıya gösterilir.
     Console.WriteLine($"Gidilecek lokasyon: {lokasyon}");
